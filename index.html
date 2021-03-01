@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Welcome to Implementation Test</title>
+
+    <!-- UserCentrics scripts -->
+    <!-- CMPv1
+    <script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="[YOUR_ID]"></script>
+     -->
+    <!-- CMPv2
+    <script id="usercentrics-cmp" data-settings-id="[YOUR_ID]" src="https://app.usercentrics.eu/browser-ui/latest/bundle.js" defer></script> 
+    -->
+    
+    <!-- SDP SCRIPTS - Uncomment this scripts to add Smart Data Protector-->
+    <!--
+      
+        <meta data-privacy-proxy-server="https://privacy-proxy-server.usercentrics.eu">
+        <script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>
+
+        
+    -->
+
+    <!-- Main style sheet -->
+    <link rel="stylesheet" type="text/css" href="./resources/css/estilo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="header-title">
+                <img class="logo" src="logo.png">
+                Usercentrics Repository Template for Tests
+            </div>
+            <div class="header-text">
+                This page serves as s simple implementation test for the CMP. 
+                (At this moment, the CMP is not blocking content for iframes used... Work in progress...)
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="card-wrapper">
+            <div class="tooltip">
+                <img class="exclam-tip" src="exclamation.png"> 
+                <span class="tooltip-text">
+                    To add SDP, simply go to the code and un-comment the SDP scripts. If you do that, you may delete this tooltip box.
+                </div>
+            </div>
+        </div>
+        <!-- Cards -->
+        <div class="card-wrapper">
+
+                <div class="card left">
+                    <div class="card-container">
+                        <div class="card-img-container">
+                            <a href="https://youtu.be/s1NXicelOww">
+                                <img class="card-img" src="resources/images/moullinex.JPG">
+                            </a>
+                        </div>
+                        <div class="card-text-container">
+                            <div class="card-text">
+                                Default settings of YouTube video
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card middle">
+                    <div class="card-container">
+                        <div class="card-img-container">
+                            <iframe class="card-img" width="560" height="315" src="https://www.youtube.com/embed/cS8ir6PXDqs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-text-container">
+                            <div class="card-text">
+                                Youtube Video - To block this using SDP, you will need to add the technology to your settingsID
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card right">
+                    <div class="card-container">
+                        <div class="card-img-container">
+                            <a href="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4">
+                                <img class="card-img" src="resources/images/fattyMonster.JPG">
+                            </a>
+                        </div>
+                        <div class="card-text-container">
+                            <div class="card-text">
+                                Direct link to HTML5 video
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        <!-- end to the cards-->
+
+        <!-- To repeat a row of 3 cards, copy the full card-wrapper div and paste it.-->
+
+        <!-- Buttons Containers-->
+
+        <div class="btn-wrapper">
+
+                <div class="btn left">
+                    <a href="#uc-button-toggle"><button class="btn-toggle">Toggle Button On/Off</button></a>
+                </div>
+
+                <div class="btn middle">
+                    <a href="#uc-accept-all-consents"><button class="btn-accept">Accept All</button></a>
+                </div>
+
+                <div class="btn middle">
+                    <a href="#uc-deny-all-consents"><button class="btn-deny">Deny All</button></a>
+                </div>
+
+                <div class="btn right">
+                    <a href="#uc-banner-toggle"><button class="btn-banner">Privacy Banner</button></a>
+                </div>
+
+        </div>
+
+        <!-- end to the buttons -->
+
+        <div class="container">
+            <div class="row">
+                <div class="uc-embed" uc-layout="2" uc-data="categoryName, description, toggle, toggleLabel"></div>
+            </div>
+            <div class="row">
+                <div class="uc-embed" uc-layout="2" uc-isselectall="false" uc-data="categoryName, toggle"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+    </div>
+</body>
